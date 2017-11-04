@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MonitorLibrary
+namespace MonitorLibrary.Model
 {
-    public class Class1
+    public class Device
     {
     }
 }
