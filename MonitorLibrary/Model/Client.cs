@@ -15,6 +15,6 @@ namespace MonitorLibrary.Model
         public string Information { get; set; }
         public DateTime RegisterDate { get; set; }
 
-        public 
+        public List<LicenceKey> LicenceKeys { get; set; }
     }
 }

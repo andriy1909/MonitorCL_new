@@ -7,14 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MonitorLibrary;
 
 namespace MonitorClient
 {
-    public partial class Form1 : Form
+    public partial class MainForm : Form
     {
-        public Form1()
+        ClientObject client = new ClientObject();
+        public MainForm()
         {
             InitializeComponent();
+        }
+
+        private void btConnect_Click(object sender, EventArgs e)
+        {
+            client.Connect("127.0.0.1", 11000);
         }
     }
 }
